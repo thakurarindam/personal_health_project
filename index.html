@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bedroom Mastery Protocol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     PASSWORD GATE
+═══════════════════════════════════════════ -->
+<div id="password-gate">
+  <div class="gate-box">
+    <h1>Bedroom Mastery<br>Protocol</h1>
+    <p>This content is private. Enter the access password to continue.</p>
+    <input id="pwd-input" type="password" placeholder="Enter password" autocomplete="off" autofocus>
+    <button id="btn-unlock" class="btn-unlock">Unlock</button>
+    <div id="gate-error" class="gate-error"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     APP SHELL
+═══════════════════════════════════════════ -->
+<div id="app" style="display:none">
+
+  <!-- SIDEBAR -->
+  <nav id="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-title">Bedroom Mastery<br>Protocol</div>
+      <div class="logo-sub">8-Week Program</div>
+    </div>
+
+    <div class="sidebar-progress-bar">
+      <div class="prog-label">
+        <span>Overall Progress</span>
+        <span id="prog-pct">0%</span>
+      </div>
+      <div class="prog-track">
+        <div class="prog-fill" id="prog-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <div id="nav-items"></div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main"></main>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
